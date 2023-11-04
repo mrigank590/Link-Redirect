@@ -1,6 +1,5 @@
 from flask import Flask, request, render_template
 import folium
-import webbrowser
 import sqlite3
 import openpyxl
 import re
@@ -11,7 +10,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/process', methods=['GET'])
+@app.route('/map', methods=['GET'])
 def process_product_link():
     product_link = request.args.get('link')
     # Open the Excel file
@@ -56,10 +55,9 @@ def process_product_link():
         conn.close()
 
     map.add_child(fg)
-    map.save("Map1.html")
-    webbrowser.open_new_tab('Map1.html')
+    map.save("templates/Map1.html")
 
-    return '<script>window.location.href = "Map1.html";</script>', 204
+    return render_template('Map1.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

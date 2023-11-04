@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3e22f0c6f859b412dad2fa7eb716cf7c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3e22f0c6f859b412dad2fa7eb716cf7c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3e22f0c6f859b412dad2fa7eb716cf7c = L.map(
+                "map_3e22f0c6f859b412dad2fa7eb716cf7c",
+                {
+                    center: [23.57720301030994, 87.23297952732543],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 20,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_264e179190bc4be192161c398acfce4a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3e22f0c6f859b412dad2fa7eb716cf7c);
+        
+    
+            var feature_group_d6f1d04295b250194c3ab66f4ba0ad91 = L.featureGroup(
+                {}
+            ).addTo(map_3e22f0c6f859b412dad2fa7eb716cf7c);
+        
+    
+            var marker_7cc315672a621bf4b10869fa2a762b01 = L.marker(
+                [23.57720301030994, 87.23297952732543],
+                {}
+            ).addTo(feature_group_d6f1d04295b250194c3ab66f4ba0ad91);
+        
+    
+            var icon_237f9fcf6d7ef0fcef062b411a93207f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7cc315672a621bf4b10869fa2a762b01.setIcon(icon_237f9fcf6d7ef0fcef062b411a93207f);
+        
+    
+        var popup_ff5bd77106b8ef7affb7f16d33ec54ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4607e1511352d5bef5ddbefaaaca073 = $(`<div id="html_c4607e1511352d5bef5ddbefaaaca073" style="width: 100.0%; height: 100.0%;"><h4><b>Home<b></h4></div>`)[0];
+                popup_ff5bd77106b8ef7affb7f16d33ec54ce.setContent(html_c4607e1511352d5bef5ddbefaaaca073);
+            
+        
+
+        marker_7cc315672a621bf4b10869fa2a762b01.bindPopup(popup_ff5bd77106b8ef7affb7f16d33ec54ce)
+        ;
+
+        
+    
+    
+            var marker_b1bb2c9ea58df661eaef240725c13041 = L.marker(
+                [23.577561746706873, 87.2302466159209],
+                {}
+            ).addTo(feature_group_d6f1d04295b250194c3ab66f4ba0ad91);
+        
+    
+            var icon_e22ca8d45eada6b51d18017a66689b89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b1bb2c9ea58df661eaef240725c13041.setIcon(icon_e22ca8d45eada6b51d18017a66689b89);
+        
+    
+        var popup_f1f4a074580a6deaaf22fc443ed68ca3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8bba7247ad0cff8e81691fcb11b60553 = $(`<div id="html_8bba7247ad0cff8e81691fcb11b60553" style="width: 100.0%; height: 100.0%;"><h3><b>Paul General Store</b></h3><br><b>Product Name:</b> Desidiya Warm White Diya/Diwali Light Curtain, Led String Lights with Pack of 12 Hanging Diyas, 8 Flashing Modes, Decoration, Prong Base<br><b>Price:</b> 300</div>`)[0];
+                popup_f1f4a074580a6deaaf22fc443ed68ca3.setContent(html_8bba7247ad0cff8e81691fcb11b60553);
+            
+        
+
+        marker_b1bb2c9ea58df661eaef240725c13041.bindPopup(popup_f1f4a074580a6deaaf22fc443ed68ca3)
+        ;
+
+        
+    
+    
+            var marker_1685b580ae254b52f1e01f023bb04e5d = L.marker(
+                [23.576702257257583, 87.23095472976954],
+                {}
+            ).addTo(feature_group_d6f1d04295b250194c3ab66f4ba0ad91);
+        
+    
+            var icon_7063e7e604c82c9a3888f47e9b6cbb1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1685b580ae254b52f1e01f023bb04e5d.setIcon(icon_7063e7e604c82c9a3888f47e9b6cbb1a);
+        
+    
+        var popup_ac2353cf6d47eb12f91648cabe18ecdb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_81a5d46eb517a52e8414d7a448b86147 = $(`<div id="html_81a5d46eb517a52e8414d7a448b86147" style="width: 100.0%; height: 100.0%;"><h3><b>Malakar Gift Shop</b></h3><br><b>Product Name:</b> Desidiya Warm White Diya/Diwali Light Curtain, Led String Lights with Pack of 12 Hanging Diyas, 8 Flashing Modes, Decoration, Prong Base<br><b>Price:</b> 400</div>`)[0];
+                popup_ac2353cf6d47eb12f91648cabe18ecdb.setContent(html_81a5d46eb517a52e8414d7a448b86147);
+            
+        
+
+        marker_1685b580ae254b52f1e01f023bb04e5d.bindPopup(popup_ac2353cf6d47eb12f91648cabe18ecdb)
+        ;
+
+        
+    
+    
+            var marker_379a6083bb85e5a5ead7a00b9877efa3 = L.marker(
+                [23.57624619935316, 87.23188612276037],
+                {}
+            ).addTo(feature_group_d6f1d04295b250194c3ab66f4ba0ad91);
+        
+    
+            var icon_fa83e558c09f1b203de6a526d1e79ad5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_379a6083bb85e5a5ead7a00b9877efa3.setIcon(icon_fa83e558c09f1b203de6a526d1e79ad5);
+        
+    
+        var popup_b8316617fa971a57a0672eb99225a225 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_47053c2d4638ea56af6502da34c02583 = $(`<div id="html_47053c2d4638ea56af6502da34c02583" style="width: 100.0%; height: 100.0%;"><h3><b>Netaji Ration Store</b></h3><br><b>Product Name:</b> Desidiya Warm White Diya/Diwali Light Curtain, Led String Lights with Pack of 12 Hanging Diyas, 8 Flashing Modes, Decoration, Prong Base<br><b>Price:</b> 400</div>`)[0];
+                popup_b8316617fa971a57a0672eb99225a225.setContent(html_47053c2d4638ea56af6502da34c02583);
+            
+        
+
+        marker_379a6083bb85e5a5ead7a00b9877efa3.bindPopup(popup_b8316617fa971a57a0672eb99225a225)
+        ;
+
+        
+    
+    
+            var marker_77e9e1ea6afd121cf4450b2c94c7d21f = L.marker(
+                [23.576795807401144, 87.23003609558677],
+                {}
+            ).addTo(feature_group_d6f1d04295b250194c3ab66f4ba0ad91);
+        
+    
+            var icon_f83a689464bc8fa990a6aed1a231bfea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shopping-cart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_77e9e1ea6afd121cf4450b2c94c7d21f.setIcon(icon_f83a689464bc8fa990a6aed1a231bfea);
+        
+    
+        var popup_c33f9f0e6263bd06006cfbbcdad86ed1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5adb70efd8a3a293ff10ece3aee77ea2 = $(`<div id="html_5adb70efd8a3a293ff10ece3aee77ea2" style="width: 100.0%; height: 100.0%;"><h3><b>R.K Electricals</b></h3><br><b>Product Name:</b> Desidiya Warm White Diya/Diwali Light Curtain, Led String Lights with Pack of 12 Hanging Diyas, 8 Flashing Modes, Decoration, Prong Base<br><b>Price:</b> 404</div>`)[0];
+                popup_c33f9f0e6263bd06006cfbbcdad86ed1.setContent(html_5adb70efd8a3a293ff10ece3aee77ea2);
+            
+        
+
+        marker_77e9e1ea6afd121cf4450b2c94c7d21f.bindPopup(popup_c33f9f0e6263bd06006cfbbcdad86ed1)
+        ;
+
+        
+    
+</script>
+</html>

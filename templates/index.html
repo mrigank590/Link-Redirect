@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LinkToLocal</title>
-    <script>
-        function processProductLink() {
-            var productLink = document.getElementById("productLink").value;
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "/process?link=" + productLink, true);
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    // Redirect to Map1.html in the same tab
-                    window.location.href = xhr.responseText;
-                }
-            };
-            xhr.send();
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
         }
-    </script>
+
+        .search-bar {
+            border-radius: 999px;
+            
+        }
+
+        .search-btn {
+            border-radius: 999px;
+        }
+    </style>
 </head>
 <body>
-    <h1>LinkToLocal</h1>
-    <input type="text" id="productLink" placeholder="Enter product link">
-    <button onclick="processProductLink()">Process</button>
+<div class="flex justify-center items-center min-h-screen">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold mb-8">LinkToLocal</h1>
+        <form action="map" class="flex flex-col items-center">
+            <input type="text" name="link" value="" placeholder="Enter Link" class="search-bar px-4 py-3 w-80 mb-4 border-none outline-none focus:ring focus:ring-blue-500" required>
+            <button type="submit" class="search-btn px-6 py-3 bg-blue-500 text-white font-semibold hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-500">
+                Search
+            </button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
