@@ -1,0 +1,92 @@
+/*--cursor---*/
+
+body{
+  cursor: url("../img/custom-cursor.png"), auto;
+}
+
+
+.p:hover{
+  cursor: url("../img/custom-cursor.png"), auto;
+}
+
+.a:hover{
+  cursor: url("../img/custom-cursor.png"), auto;
+}
+
+.i:hover{
+  cursor: url("../img/custom-cursor.png"), auto;
+}
+
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #682ae9;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 1000ms, height 1000ms;
+}
+
+.cursor.large {
+  height: 70px;
+  width: 70px;
+}
+
+.cursor2 {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #682ae9;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 1000ms, height 1000ms;
+}
+
+.cursor2.large {
+  height: 70px;
+  width: 70px;
+}
+
+
+/*--About Page---*/
+
+.stack{
+  color: var(--purple);
+  font-size: 20px;
+}
+
+.stackfull{
+  font-size: 18px;
+  font-weight: normal;
+  margin-right: 300px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: var(--comment);
+}
+
+.sas{
+  margin-bottom: 20px;
+}
+
+.sttech{
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--gray);
+}
+
+.lazy{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.work{
+  /*margin-top: 5px;*/
+  margin-bottom: 25px;}
+
+.abt{
+  margin-right: 80px;
+}

@@ -1,37 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinkToLocal</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #121212;
-            color: #ffffff;
-        }
 
-        .search-bar {
-            border-radius: 999px;
-            
-        }
+  <meta charset="utf-8">
+  <title> .local() </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        .search-btn {
-            border-radius: 999px;
-        }
-    </style>
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  
+  <link rel="apple-touch-icon" href="icon.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.js" integrity="sha512-alUs/9QWS9TdxYygQKopHrjMK9T+Tun55+1EKgiG8lCSHSL2Br7p69RsCFCycu2T2I707/8Y0vkyjTVGHdfHUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <meta name="theme-color" content="#fafafa">
 </head>
+
 <body>
-<div class="flex justify-center items-center min-h-screen">
-    <div class="text-center">
-        <h1 class="text-4xl font-bold mb-8">LinkToLocal</h1>
-        <form action="map" class="flex flex-col items-center">
-            <input type="text" name="link" value="" placeholder="Enter Link" class="search-bar px-4 py-3 w-80 mb-4 border-none outline-none focus:ring focus:ring-blue-500" required>
-            <button type="submit" class="search-btn px-6 py-3 bg-blue-500 text-white font-semibold hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-500">
-                Search
-            </button>
-        </form>
+
+  <header>
+    <div class="logo">
+      <span>.hub()</span>
     </div>
-</div>
+    <nav>
+      <a href="#" class="p">.project()</a>
+      <a href="/about" class="a">.about()</a>
+      <div class="icons">
+        <a href="#" class="i">
+          <i class="far fa-file fa-lg"></i>
+        </a>
+        <a href="#" class="i">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+      </div>
+    </nav>
+
+  </header>
+
+  <div class="design">
+
+
+    <div class="left"></div>
+
+    <div class="center">
+      <div class="hider"></div>
+      <div class="dot"></div>
+      <div class="line"></div>
+    </div>
+
+
+
+
+    <div class="right">
+      <div class="welcome" id="upper-div">
+        <h1 class="ltl">
+          localfetch<span class="local">.hub()</span>
+        </h1>
+        <div class="">
+          <form action="/map" class="searchBox boxsearch">
+            <input type="text" name="link" value="" placeholder="Search the products nearby" class="searchInput" required>
+            <button type="submit" class="searchButton">
+              <i class="fa-brands fa-searchengin fa-xl"></i>
+            </button>
+          </form>
+        </div>
+
+
+      </div>
+
+      <div class="whatnwhy" id="lower-div">
+        <h1 class="wnw aos-item aos-init aos-animate" data-aos="zoom-in-down" data-aos-duration="3000">.what<span class="local">()</span>.why<span class="local">()</span>
+        </h1>
+        <p class="abt">
+          <span class="stack">.what: </span>
+          The project aims to create an e-commerce platform addressing the challenge of buying products without physical inspection. It provides comprehensive product evaluations, unbiased reviews, a price comparison tool, and calculates distances to local shops from users' homes. This empowers informed decision-making and saves time while minimizing buyer's remorse.
+          <br><br>
+          <span class="stack">.why: </span>
+          This project responds to the common issue in online shopping—purchasing expensive items without physical examination. By offering detailed evaluations, unbiased reviews, and a convenient price comparison feature, it empowers users to confidently choose products aligned with their needs. Additionally, the platform's ability to calculate distances to local stores enhances accessibility and streamlines the shopping process, ultimately reducing uncertainty in purchasing decisions and boosting user satisfaction.
+        </p>
+        <div class="cursor2"></div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="cursor"></div>
+
+
+
+<!------------------------------------------------Scripts------------------------------------------------>
+
+  <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EaselPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+  <script src="https://kit.fontawesome.com/d0bb4cd3e4.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+
+<script>
+
+
+
+</script>
 </body>
+
 </html>
