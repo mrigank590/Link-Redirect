@@ -117,7 +117,7 @@ githubIcon.addEventListener('mouseout', handleMouseOut2);
 
 document.addEventListener("mousemove", (e) => {
     let leftPosition = e.pageX + 4;
-    let topPosition = e.pageY - 783;
+    let topPosition = e.pageY - 578;
 
     cursorDiv2.style.left = leftPosition + "px";
     cursorDiv2.style.top = topPosition + "px";

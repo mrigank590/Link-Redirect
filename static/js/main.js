@@ -41,7 +41,7 @@ timeline.to('.dot',{
   duration: 2, // Animation duration in seconds
   ease: "power2.out", // Easing function
 }).from(".searchBox",{
-  x:-1000,
+  x:-1200,
   duration: 1, // Animation duration in seconds
   ease: "power2.out",
 }).from(".abt", {
@@ -57,7 +57,3 @@ timeline.to('.dot',{
     end: "top 10%",
   },
 })
-
-
-
-
